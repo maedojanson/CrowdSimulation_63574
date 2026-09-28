@@ -468,11 +468,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 109882770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23424bf68f20a844a8e8ce283a91917e, type: 3}
+  m_Script: {fileID: 11500000, guid: 725422ab73693430eae1f78702298af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
-  waitTime: 2
-  arriveDistance: 1.8
 --- !u!136 &109882779
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -560,17 +558,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 131588141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8051239ce83fe4dae9bac5ff3d423ec9, type: 3}
+  m_Script: {fileID: 11500000, guid: da95f658499d7334f898c66935f94fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonMovement
-  walkSpeed: 5
-  gravity: -9.81
-  playerCamera: {fileID: 0}
-  mouseSensitivity: 0.15
-  maxLookAngle: 80
-  bobFrequency: 10
-  bobAmount: 0.05
-  bobSwayAmount: 0.03
+  obstacle: {fileID: 1286278131747643428, guid: 71c8be6759111614399e8bbb4c5fff45, type: 3}
 --- !u!143 &131588143
 CharacterController:
   m_ObjectHideFlags: 0
@@ -626,7 +617,7 @@ NavMeshObstacle:
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
   m_TimeToStationary: 0.1
 --- !u!1001 &153933607
 PrefabInstance:
@@ -651,6 +642,10 @@ PrefabInstance:
     - target: {fileID: 100004, guid: 0ad4da72eb12fe74097348bea3c928d5, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0ad4da72eb12fe74097348bea3c928d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 0ad4da72eb12fe74097348bea3c928d5, type: 3}
       propertyPath: m_Layer
@@ -1226,6 +1221,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100008, guid: 56b0baa3aaae042b6aff80aa8e7cc807, type: 3}
+      propertyPath: m_TagString
+      value: agent
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 56b0baa3aaae042b6aff80aa8e7cc807, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1734,6 +1733,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100010, guid: e414cffd20d1c4c9387b91a1d2b20ddf, type: 3}
+      propertyPath: m_TagString
+      value: agent
+      objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: e414cffd20d1c4c9387b91a1d2b20ddf, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1820,11 +1823,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 490614442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23424bf68f20a844a8e8ce283a91917e, type: 3}
+  m_Script: {fileID: 11500000, guid: 725422ab73693430eae1f78702298af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
-  waitTime: 2
-  arriveDistance: 1.8
 --- !u!136 &490614447
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2182,6 +2183,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100008, guid: 99bbb97e7b9c34ae6bd8c3fc34dbc6f0, type: 3}
+      propertyPath: m_TagString
+      value: agent
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 99bbb97e7b9c34ae6bd8c3fc34dbc6f0, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -2395,11 +2400,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 582624793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23424bf68f20a844a8e8ce283a91917e, type: 3}
+  m_Script: {fileID: 11500000, guid: 725422ab73693430eae1f78702298af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
-  waitTime: 2
-  arriveDistance: 1.8
 --- !u!136 &582624799
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2694,6 +2697,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100008, guid: 7d775aa96cfc246c9b8ce7029a885938, type: 3}
+      propertyPath: m_TagString
+      value: agent
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 7d775aa96cfc246c9b8ce7029a885938, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2780,11 +2787,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 768213993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23424bf68f20a844a8e8ce283a91917e, type: 3}
+  m_Script: {fileID: 11500000, guid: 725422ab73693430eae1f78702298af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
-  waitTime: 2
-  arriveDistance: 1.8
 --- !u!136 &768213998
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3131,6 +3136,10 @@ PrefabInstance:
     - target: {fileID: 100138, guid: 1beae96f32c76ad4b83936a7662db828, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100138, guid: 1beae96f32c76ad4b83936a7662db828, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100140, guid: 1beae96f32c76ad4b83936a7662db828, type: 3}
       propertyPath: m_Layer
@@ -6473,6 +6482,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100004, guid: 28b9d4414d24c4fddb2bdbdae494d017, type: 3}
+      propertyPath: m_TagString
+      value: agent
+      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 28b9d4414d24c4fddb2bdbdae494d017, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -7430,6 +7443,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100012, guid: 76101ab1057434476a8453baaeadd4a2, type: 3}
+      propertyPath: m_TagString
+      value: agent
+      objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 76101ab1057434476a8453baaeadd4a2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7516,11 +7533,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1421764835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23424bf68f20a844a8e8ce283a91917e, type: 3}
+  m_Script: {fileID: 11500000, guid: 725422ab73693430eae1f78702298af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
-  waitTime: 2
-  arriveDistance: 1.8
 --- !u!136 &1421764840
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7552,6 +7567,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100008, guid: d7ff0367464744cceabbcfbc93030ccc, type: 3}
+      propertyPath: m_TagString
+      value: agent
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: d7ff0367464744cceabbcfbc93030ccc, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7638,11 +7657,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1423706741}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23424bf68f20a844a8e8ce283a91917e, type: 3}
+  m_Script: {fileID: 11500000, guid: 725422ab73693430eae1f78702298af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
-  waitTime: 2
-  arriveDistance: 1.8
 --- !u!136 &1423706746
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10392,13 +10409,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592576248}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0861125, y: 0, z: 0, w: 0.99628544}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalRotation: {x: 0.101508185, y: -0.20933406, z: 0.021854138, w: 0.9723157}
+  m_LocalPosition: {x: -3.73, y: 7.4, z: -11.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 131588144}
-  m_LocalEulerAnglesHint: {x: 9.88, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 11.92, y: -24.3, z: 0}
 --- !u!1 &1601304057
 GameObject:
   m_ObjectHideFlags: 0
@@ -10478,7 +10495,7 @@ GameObject:
   - component: {fileID: 1622174731}
   m_Layer: 0
   m_Name: Girl_3
-  m_TagString: Untagged
+  m_TagString: agent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10559,11 +10576,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1622174726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23424bf68f20a844a8e8ce283a91917e, type: 3}
+  m_Script: {fileID: 11500000, guid: 725422ab73693430eae1f78702298af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
-  waitTime: 2
-  arriveDistance: 1.8
 --- !u!136 &1622174731
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11352,11 +11367,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2038871523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23424bf68f20a844a8e8ce283a91917e, type: 3}
+  m_Script: {fileID: 11500000, guid: 725422ab73693430eae1f78702298af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
-  waitTime: 2
-  arriveDistance: 1.8
 --- !u!136 &2038871531
 CapsuleCollider:
   m_ObjectHideFlags: 0
